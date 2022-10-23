@@ -1,0 +1,41 @@
+@import url('index.css');
+@import url('pg_projeto.css');
+@import url('pg_formacao.css');
+
+:root {
+  line-height: 24px;
+  --fonte-nome: 'Fuzzy Bubbles', cursive;
+  --fonte-texto: 'Nunito', sans-serif;
+  --fonte-titulo: 'Fredoka One', cursive;
+  --fonte-destaque: 'Noto Sans', sans-serif;
+  --cor-principal:  #011640;
+  --cor-secundaria: #0487D9;
+  --cor-terciaria:    #010A26;
+  --cor-de-fundo:    #F2F2F2;
+  --cor-preto:    #0D0D0D;
+  --cor-titulo:   #04B2D9;
+  --cor-texto:    #F2F0E4;
+  --cor-amarelo: #F2E416;
+}
+*{  margin: 0;  padding: 0;}
+body {  max-width: 100vw;  min-height: 100vh; overflow-y: hidden;}
+p{font-size: 1rem;  font-family: var(--fonte-texto); color: var(--cor-texto);}
+.container-fluid{padding-left: 0 !important; background-color: var(--cor-principal);}
+
+/* ICONES */
+.fa-css3-alt{   color: #1239E6;}
+.fa-html5{    color: #FA7F08;}
+.fa-square-js{    color: #F2E635;}
+.fa-java{    color: #59341E;}
+.fa-python{   
+    display: inline-block;
+	background: linear-gradient(#1239E6, #F2E635);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+}
+.fa-envelope{    color: var(--cor-texto);}
+.fa-linkedin{    color: #0E2CB3;}
+.fa-github{    color: #4D24B5;}
+.fa-github:hover{    color: #632EE8;}
+.fa-linkedin:hover{    color: #1239E6;}
