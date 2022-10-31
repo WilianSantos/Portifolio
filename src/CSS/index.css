@@ -118,13 +118,13 @@
 .info-box2{
     grid-area: infob2;
     position: relative;
-    height: 100%;
+    height: 600px;
     width: 80%;
-    background: linear-gradient(rgb(0, 0, 0, 1), rgb(0, 0, 0, 0.9)), url('../../public/code-1084923_640.png');
+    background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url('../../public/code-1084923_640.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 3em;
+    top: 7em;
     margin: 1em;
 }
 .info-box2 .fa-git,.fa-aws{
@@ -134,28 +134,22 @@
     display: flex;
     flex-direction: column;
     font-size: 2.5rem;
-    width: 50%;
     height: auto;
     margin-left: 5em;
+    margin-top: 2em;
     color: #FFFFFF;
     font-family: var(--fonte-titulo);
 }
-.info-box2 h2 b{
+.info-box2 p{
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    margin: 2em;
+    margin-top: 4em;
+    text-align: justify;
+}
+.info-box2 p b{
     font-family: var(--fonte-destaque);
     color: #F2E416;
-}
-.info-box2 ul{
-    
-    list-style: none;
-    width: 80%;
-    height: 50%;
-    margin: 2em;
-}
-.info-box2 li{
-    margin-top: 1rem;
-}
-.info-box2 i{
-    font-size: 3rem;
 }
 .img-box2{
     grid-area: imgb2;
@@ -181,11 +175,142 @@
 .btn-box2 button{
     width: 30vw;
     height: 5vh;
+    font-size: 1.2rem;
     border: 1px solid #0D0D0D;
-    margin-top: 13.8em;
+    margin-top: 11.5em;
     font-family: var(--fonte-destaque);
     background-color: #F2F0E4;
 }
 .btn-box2 button:hover{
     border: none;
+}
+
+.box-3{
+    display: grid;
+    grid-template-areas: "titulob3 iconb3" "titulob3 iconb3" "titulob3 btnb3";
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 200px 200px 100px;
+    gap: 1em;
+    margin-top: 5em;
+}
+.titulo-box3{
+    grid-area: titulob3;
+    display: flex;
+    flex-direction: column;
+    font-size: 5rem;
+    color: #0D0D0D;
+    font-family: var(--fonte-titulo);
+    margin-left: 1em;
+}
+.titulo-box3 b{
+    font-family: var(--fonte-destaque);
+    color: #F2E416;
+}
+.icon-box3{
+    grid-area: iconb3;
+    list-style: none;
+    width: 80%;
+    height: 50%;
+    margin: 2em;
+}
+.icon-box3 li{
+    margin-top: 1rem;
+}
+.icon-box3 i{
+    font-size: 2rem;
+}
+.btn-box3{
+    grid-area: btnb3;
+    width: 30vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    font-family: var(--fonte-destaque);
+    background-color: #F2E416;
+    color: #FFFFFF;
+    opacity: 0.7;
+    border: none;
+}
+.btn-box3:hover{
+    opacity: 1;
+}
+
+.projetos{
+    width: 90vw;
+    margin: 4em;
+    border-top: 3px solid #0D0D0D;
+    text-align: center;
+}
+.projetos h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: #0D0D0D;
+    margin: 2em;
+}
+.projetos h1 b{
+    font-family: var(--fonte-destaque);
+    color: #F2E416;
+}
+.projetos i{
+    font-size: 2.5rem;
+    margin-top: 1em;
+}
+
+.box-4{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 400px 400px 400px;
+}
+.box-4 a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 3em;
+}
+.box-4 p{
+    position: relative;
+    font-family: var(--fonte-texto);
+    font-size: 2rem;
+    margin-top: 2em;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+.box-4 p:hover{
+    opacity: 1;
+}
+.pj-banco{
+    background-image: url('../../public/dollars-499481_640.jpg');
+}
+.pj-banco:hover{
+    background-color: #F2E416;
+    z-index: 10;
+    background-image: none;
+}
+.rodape{
+    width: 100vw;
+    height: 400px;
+    background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url('../../public/creux-du-van-2839090_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2em;
+}
+.rodape ul{
+    display: flex;
+    list-style: none;
+    margin-top: 4em;
+}
+.rodape li{
+    margin-left: 2em;
+}
+.rodape i{
+    font-size: 2.5rem;
+}
+.rodape a{
+    color: #F2E416;
 }
